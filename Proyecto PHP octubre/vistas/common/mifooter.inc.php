@@ -33,6 +33,3 @@
 	
 </div>
 </div>
-<?php
-	include("base2.inc.php")
-?>

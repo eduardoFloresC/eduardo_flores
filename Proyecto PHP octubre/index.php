@@ -32,6 +32,9 @@
 			case 'agregar_producto':
 				$modulo="agregar_producto";
 				break;
+			case 'agregar_al_carrito':
+				$modulo="agregar_al_carrito";
+				break;
 		}
 	}
 	include "vistas/".$modulo."/index.php";
