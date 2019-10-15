@@ -3,22 +3,16 @@
 	if ( session_status() === PHP_SESSION_NONE  ){
 		session_start();
 	}
-	
-
  ?>
-<?php
-    include 'modelo/DAOs/productosDAO.php';
-?>
-
-
 
 <!DOCTYPE html>
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
 	<title>TCG COMPRA VENTA - Login</title>
+	<link rel="stylesheet" href="css/estili.css">
 	<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="../../css/estili.css">
+	
 </head>
 
 <header class="header">
@@ -41,9 +35,12 @@
         </ul>
         	
 		<div>
+			
 		<?php
 			if (isset($_SESSION["carrito"])) {?>
-				<a htabindex="-1" role="button" aria-disabled="true" href="carrito.php?m=carrito&a=listar" class="btn btn-info btn-sm mr-2"tabindex="-1" role="button" aria-disabled="true">Carrito(<?= sizeof($_SESSION["carrito"]) ?>)	</a><?php
+				<a htabindex="-1" role="button" aria-disabled="true" href="index.php?m=carrito&a=listar" class="btn btn-info btn-sm mr-2"tabindex="-1" role="button" aria-disabled="true">
+				Carrito(<?= sizeof($_SESSION["carrito"])?>)
+					</a><?php
 			}
 		?>
 		<?php

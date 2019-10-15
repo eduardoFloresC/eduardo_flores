@@ -8,7 +8,7 @@
 				
 				</div>
 			</div>
-			<h3>Compra Venta de TCG (Trading Card Games)</h3>
+			<h2>Compra Venta de TCG (Trading Card Games)</h2>
 			<ul class="nav-item dropdown">
             	<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
              Listado Por Categorias
@@ -68,7 +68,7 @@
 
 				</div>
 				
-				<div class="container mt-5">
+				<div class="container mt-5 text-center">
 					<h2>Ofertas</h2>
 					<div class="row">
 							<?php
@@ -90,9 +90,9 @@
 
 								foreach ($productos as $producto){
 										
-									?><div class="card text-center mr-5 mt-2 card-transparent border-dark" >
+									?><div class="card text-center mr-5 mt-2 card-transparent border-dark" style="width: 14rem;">
 									<div class="card-header"><?=$producto ["prod_nombre"];?></div>
-									<img src=img/<?= $producto["prod_imagen"];?> class="mx-auto" width="200">
+									<img src=img/<?= $producto["prod_imagen"];?>  class="mx-auto img-fluid" width="200">
 									<?php
 									echo "<p> Precio del Producto $ ".$producto ["prod_precio"]."</p></b>";
 									?>

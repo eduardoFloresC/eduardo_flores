@@ -35,7 +35,9 @@
 			case 'agregar_al_carrito':
 				$modulo="agregar_al_carrito";
 				break;
-		}
-	}
+			case 'registrar_producto':
+				$modulo = "registrar_producto";
+				break;
+	}}
 	include "vistas/".$modulo."/index.php";
 ?>

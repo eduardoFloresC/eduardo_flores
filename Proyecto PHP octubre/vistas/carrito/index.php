@@ -11,7 +11,7 @@
 
           case 'listar':
                $contenido = "vistas/carrito/partials/contenido_carrito.php";
-               include "vistas/common/base.php";
+               include "vistas/common/base.inc.php";
 
                break;
           

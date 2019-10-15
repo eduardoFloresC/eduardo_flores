@@ -17,12 +17,12 @@
 
 	if (!$resultado) {
 
-		echo "error al registrarse";
-		
+		header("Location:index.php");
+
 	}
 	else {
+		header("Location:index.php?m=pantalla_usuario");
 		
-		echo "usuario registrado Exitosamente";
 	}
 	mysqli_close($conexion);
 ?>
