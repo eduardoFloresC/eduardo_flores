@@ -1,3 +1,4 @@
+
 <body>
 	
 	<h1 class="text-center">Mis Publicaciones</h1>
@@ -14,24 +15,25 @@
 
 				$consulta = "SELECT * FROM usuarios, productos WHERE usuarios.usr_id = productos.usr_id AND usuarios.usr_id = $_SESSION[usr_id]";
 
-				$productos=$conexion->query($consulta);
+				$productos = $conexion->query($consulta);
 
-				foreach ($productos as $producto) {
-					?> <div class="card text-center border-dark bg-light" style="max-width: 18rem;" >
-						<div class="card-header"><?= $producto["prod_nombre"];?></div>
-						<div class="card-body">
-						  <img src=img/<?= $producto["prod_imagen"];?> class="card-img-top"  style="width: 250px" >
-						  
-  					    	<p><?= $producto["prod_descripcion"];?></p>
-						    <p>Precio : $ <?= $producto["prod_precio"];?></p>
-						  </div>
-						  <div class="card-footer" style="text-align: center">
-						  	<button>Editar</button>
-						  	<a class="btn btn-success" href="index.php?m=pantalla_usuario&a=quitar&indice="<?php  $_SESSION['usr_id'] ?>> Eliminar</a>
-						  </div>
-						</div>
-				<?php							
-				}
+					foreach ($productos as $producto) {
+						?> <div class="card text-center border-dark bg-light" style="max-width: 18rem;" >
+							<div class="card-header"><?= $producto["prod_nombre"];?></div>
+							<div class="card-body">
+							  <img src=img/<?= $producto["prod_imagen"];?> class="card-img-top"  style="width: 250px" >
+							  
+	  					    	<p><?= $producto["prod_descripcion"];?></p>
+							    <p>Precio : $ <?= $producto["prod_precio"];?></p>
+							  </div>
+							  <div class="card-footer" style="text-align: center">
+							  	<button>Editar</button>
+							  	<a class="btn btn-success" href="index.php?m=pantalla_usuario&a=quitar&indice="<?php  $_SESSION['usr_id'] ?>> Eliminar</a>
+							  </div>
+							</div>
+					<?php							
+					}
+				
 			?>
 			</div>
 		</div>

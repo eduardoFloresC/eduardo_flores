@@ -92,7 +92,7 @@
 										
 									?><div class="card text-center mr-5 mt-2 card-transparent border-dark" style="width: 14rem;">
 									<div class="card-header"><?=$producto ["prod_nombre"];?></div>
-									<img src=img/<?= $producto["prod_imagen"];?>  class="mx-auto img-fluid" width="200">
+									<img src=img/<?= $producto["prod_imagen"];?>  class="mx-auto img-fluid" width="200" onmouseover="this.width=500;this.height=500;" onmouseout="this.width=200;this.height=200;" width="300" height="300" >
 									<?php
 									echo "<p> Precio del Producto $ ".$producto ["prod_precio"]."</p></b>";
 									?>

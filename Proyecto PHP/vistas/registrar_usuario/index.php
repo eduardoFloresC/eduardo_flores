@@ -16,8 +16,11 @@
 	$insertar = "INSERT INTO usuarios(usr_alias, usr_nombre, usr_apellido, password, email, provincia_id) VALUES ('$alias','$nombre','$apellido','$password','$email','$provincia')";
 	$resultado = $conexion->query($insertar);
 
+
 	$_SESSION["usr_alias"]= $alias;
 	$_SESSION["carrito"]= [];
+	
+	session_destroy();
 
-	header("Location: index.php");
+	header("Location: index.php?m=ingreso");
 ?>

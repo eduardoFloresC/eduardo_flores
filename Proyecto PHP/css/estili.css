@@ -1,6 +1,4 @@
-img{
-	width: 150;
-}
-body{
-	background-color: "red";
+
+body {
+  background-image: url("img/amarillo.jpg");
 }

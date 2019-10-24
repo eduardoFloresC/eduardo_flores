@@ -10,7 +10,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>TCG COMPRA VENTA - Login</title>
-	<link rel="stylesheet" href="css/estili.css">
+	<link rel="stylesheet" type="text/css" href="css/estili.css">
 	<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
 	
 </head>
@@ -43,11 +43,12 @@
 					</a><?php
 			}
 		?>
+	</div><div>
 		<?php
 			if ( isset($_SESSION["usr_alias"]) ){
 
 
-				echo "Bienvenido " . $_SESSION["usr_alias"];
+				echo "Bienvenid@ " . $_SESSION["usr_alias"];
 
 				echo "<div><a href=\"index.php?m=logout\">Cerrar sesión</a></div>";
 				
