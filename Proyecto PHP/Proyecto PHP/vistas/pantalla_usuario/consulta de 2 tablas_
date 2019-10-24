@@ -1,0 +1,5 @@
+consulta de 2 tablas_
+
+select* FROM productos WHERE 
+
+SELECT * FROM usuarios, productos WHERE usuarios.usr_id = productos.usr_id AND usuarios.usr_id = 2
